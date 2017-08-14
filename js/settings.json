@@ -1,0 +1,37 @@
+{
+  "version": "0.1",
+  "genes": {
+    "scale": {
+      "min": 1,
+      "max": 7,
+      "mean": 4
+    },
+    "alpha": {
+      "min": 5,
+      "max": 255,
+      "mean": 200
+    },
+    "xvelocity": {
+      "min": 1,
+      "max": 500,
+      "mean": 200
+    },
+    "yvelocity": {
+      "min": 1,
+      "max": 500,
+      "mean": 200
+    },
+    "x_prob_change_dir": {
+      "min": 0.01,
+      "max": 0.07,
+      "mean": 0.03
+    },
+    "y_prob_change_dir": {
+      "min": 0.01,
+      "max": 0.07,
+      "mean": 0.03
+    }
+  },
+  "mutation_probability": 0.1,
+  "mutation_effect": 0.5
+}

@@ -1,0 +1,41 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+	<meta charset="UTF-8" />
+	<title>CiTIUS Invaders</title>
+    <!--<script src="http://zeptojs.com/zepto.min.js"></script>-->
+	<script src="phaser.min.js"></script>
+	<script src="chance.min.js"></script>
+	<script src="Boot.js"></script>
+	<script src="Preloader.js"></script>
+	<script src="js/Utils.js"></script>
+	<script src="js/Player.js"></script>
+	<script src="js/Invader.js"></script>
+	<script src="js/Evolution.js"></script>
+	<script src="MainMenu.js"></script>
+	<script src="Game.js"></script>
+</head>
+<body>
+
+<div id="gameContainer"></div>
+
+<script type="text/javascript">
+
+window.onload = function() {
+
+
+	var game = new Phaser.Game(960, 540, Phaser.AUTO, 'gameContainer');
+
+	game.state.add('Boot', invadersApp.Boot);
+	game.state.add('Preloader', invadersApp.Preloader);
+	game.state.add('MainMenu', invadersApp.MainMenu);
+	game.state.add('Game', invadersApp.Game);
+
+	game.state.start('Boot');
+
+};
+
+</script>
+
+</body>
+</html>
